@@ -1,0 +1,18 @@
+trigger:
+  branches:
+    include:
+      - main
+
+resources:
+  repositories:
+    - repository: centralized
+      type: github
+      name: your-github-org/centralized-repo
+      ref: refs/heads/main
+      endpoint: github-service-connection
+
+extends:
+  template: templates/hello-template.yml@centralized
+  parameters:
+    appName: 'app1'
+
