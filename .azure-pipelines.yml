@@ -7,9 +7,9 @@ resources:
   repositories:
     - repository: centralized
       type: github
-      name: your-github-org/centralized-repo
+      name: naidu72/centralized-repo
       ref: refs/heads/main
-      endpoint: github-service-connection
+      endpoint: naidu72git
 
 extends:
   template: templates/hello-template.yml@centralized
